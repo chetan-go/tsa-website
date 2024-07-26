@@ -7,7 +7,106 @@
       href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
     <title>The Schram Academy | CBSE & International School</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+      body {
+        line-height: 1.5;
+        font-family: "Poppins", sans-serif;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        max-width: 1170px;
+        margin: auto;
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      ul {
+        list-style: none;
+      }
+      .footer {
+        background-color: #24262b;
+        padding: 70px 0;
+      }
+      .footer-col {
+        width: 25%;
+        padding: 0 15px;
+      }
+      .footer-col h4 {
+        font-size: 18px;
+        color: #ffffff;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        font-weight: 500;
+        position: relative;
+      }
+      .footer-col h4::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        background-color: #e91e63;
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+      }
+      .footer-col ul li:not(:last-child) {
+        margin-bottom: 10px;
+      }
+      .footer-col ul li a {
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #bbbbbb;
+        text-decoration: none;
+        font-weight: 300;
+        display: block;
+        transition: all 0.3s ease;
+      }
+      .footer-col ul li a:hover {
+        color: #ffffff;
+        padding-left: 8px;
+      }
+      .footer-col .social-links a {
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: rgba(255, 255, 255, 0.2);
+        margin: 0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #ffffff;
+        transition: all 0.5s ease;
+      }
+      .footer-col .social-links a:hover {
+        color: #24262b;
+        background-color: #ffffff;
+      }
+      /*responsive*/
+      @media (max-width: 767px) {
+        .footer-col {
+          width: 50%;
+          margin-bottom: 30px;
+        }
+      }
+      @media (max-width: 574px) {
+        .footer-col {
+          width: 100%;
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -19,156 +118,92 @@
       <a href="./index.html"
         ><img
           src="https://chetan-go.github.io/tsa-website/TSA-Logo-e1675253878435.jpg"
-        />
-      </a>
+          alt="TSA Logo"
+      /></a>
       <div class="flex gap-6 items-center justify-end w-full">
         <a class="p-2 rounded-md hover:bg-blue-700" href="./index.html">Home</a>
-        <a class="p-2 rounded-md hover:bg-blue-700" href="./about.html">About</a>
-        <a class="p-2 rounded-md hover:bg-blue-700" href="./Academics.html">Academics</a>
-        <a class="p-2 rounded-md hover:bg-blue-700" href="./others.html">Others</a>
+        <a class="p-2 rounded-md hover:bg-blue-700" href="./about.html"
+          >About</a
+        >
+        <a class="p-2 rounded-md hover:bg-blue-700" href="./Academics.html"
+          >Academics</a
+        >
+        <a class="p-2 rounded-md hover:bg-blue-700" href="./others.html"
+          >Others</a
+        >
       </div>
     </nav>
+
     <!-- Content Section -->
     <section class="text-lg container mx-auto mt-12">
       <!-- Add some academics page content here -->
-<img src="https://chetan-go.github.io/tsa-website/admission-opens-new-image-1.png" alt="the image to tsa" style="float:right;width:200px;height:200px;">
+
+      <p class="text-2xl font-bold mt-8">
+        Subjects and Extra Curricular Activities
+      </p>
+      <div>
+        <li>Maths📐</li>
+        <li>Science 🧪</li>
+        <li>English 🗣</li>
+        <li>Social Science 👨‍⚖</li>
+        <li>Computer Science 🖥</li>
+        <li>Dance 🕺</li>
+        <li>Music 🎶</li>
+        <li>PT 🏃</li>
+      </div>
+
+      <br />
+
+      <p class="text-2xl font-bold mt-8">Club Activities</p>
+      <div>
+        <li>MUN Club 🎓</li>
+        <li>Astronomy Club ⭐</li>
+        <li>Book and Reading Club 📖</li>
+        <li>Taekwondo 🥋</li>
+        <li>Cookery Club 👩‍🍳</li>
+        <li>Photography Club 📷</li>
+      </div>
+
+      <img
+        src="https://chetan-go.github.io/tsa-website/admission-opens-new-image-1.png"
+        alt="Admission Opens"
+        style="float: right; width: 200px; height: 200px"
+      />
     </section>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-body{
-  line-height: 1.5;
-  font-family: 'Poppins', sans-serif;
-}
-*{
-  margin:0;
-  padding:0;
-  box-sizing: border-box;
-}
-.container{
-  max-width: 1170px;
-  margin:auto;
-}
-.row{
-  display: flex;
-  flex-wrap: wrap;
-}
-ul{
-  list-style: none;
-}
-.footer{
-  background-color: #24262b;
-    padding: 70px 0;
-}
-.footer-col{
-   width: 25%;
-   padding: 0 15px;
-}
-.footer-col h4{
-  font-size: 18px;
-  color: #ffffff;
-  text-transform: capitalize;
-  margin-bottom: 35px;
-  font-weight: 500;
-  position: relative;
-}
-.footer-col h4::before{
-  content: '';
-  position: absolute;
-  left:0;
-  bottom: -10px;
-  background-color: #e91e63;
-  height: 2px;
-  box-sizing: border-box;
-  width: 50px;
-}
-.footer-col ul li:not(:last-child){
-  margin-bottom: 10px;
-}
-.footer-col ul li a{
-  font-size: 16px;
-  text-transform: capitalize;
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 300;
-  color: #bbbbbb;
-  display: block;
-  transition: all 0.3s ease;
-}
-.footer-col ul li a:hover{
-  color: #ffffff;
-  padding-left: 8px;
-}
-.footer-col .social-links a{
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-  background-color: rgba(255,255,255,0.2);
-  margin:0 10px 10px 0;
-  text-align: center;
-  line-height: 40px;
-  border-radius: 50%;
-  color: #ffffff;
-  transition: all 0.5s ease;
-}
-.footer-col .social-links a:hover{
-  color: #24262b;
-  background-color: #ffffff;
-}
 
-/*responsive*/
-@media(max-width: 767px){
-  .footer-col{
-    width: 50%;
-    margin-bottom: 30px;
-}
-}
-@media(max-width: 574px){
-  .footer-col{
-    width: 100%;
-}
-}
-</style>
-<head>
-  <title>Footer Design</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-</head>
-<body>
-
-  <footer class="footer">
-     <div class="container">
-      <div class="row">
-        <div class="footer-col">
-          <h4>Maduravoyal</h4>
-          <ul>
-            <li><a>One Schram Avenue,</a></li>
-            <li><a>Maduravoyal,</a></li>
-            <li><a>Chennai-600095</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Ayanambakkam</h4>
-          <ul>
-            <li><a>No 189, Perumal Koil Street</a></li>
-            <li><a>Rajan Kuppam</a></li>
-            <li><a>Ayanambakkam Village</a></li>
-            <li><a>Thiruverkadu Municipality</a></li>
-            <li><a>Chennai – 6000095</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>follow us</h4>
-          <div class="social-links">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Maduravoyal</h4>
+            <ul>
+              <li><a>One Schram Avenue,</a></li>
+              <li><a>Maduravoyal,</a></li>
+              <li><a>Chennai-600095</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Ayanambakkam</h4>
+            <ul>
+              <li><a>No 189, Perumal Koil Street</a></li>
+              <li><a>Rajan Kuppam</a></li>
+              <li><a>Ayanambakkam Village</a></li>
+              <li><a>Thiruverkadu Municipality</a></li>
+              <li><a>Chennai – 6000095</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
           </div>
         </div>
       </div>
-     </div>
-  </footer>  
-</body>
+    </footer>
+  </body>
 </html>
